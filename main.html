@@ -3,36 +3,36 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
-<body>	
-	<script>
-		function secondHighest(arr) {
-			//Write your code here
-					if(arr.length ===1){
-		return Infinity;
-		}
-		arr.sort(function(a, b){return a - b});
-		
-		if(arr[0]===arr[arr.length-1]){
-		return Infinity;
-		}
-		return arr[arr.length-2];
-		}
+<body>
+<script>
+function secondHighest(arr) {
+if(arr.length ===1){
+return Infinity;
+}
+arr.sort(function(a, b){return a - b});
 
-		function Main() {
-			var n = prompt("Enter the number of elements");
-			var arr = [];
-			for (var i = 0; i < n; i++) {
-				arr[i] = prompt("Enter element " + (i+1));
-			}
-			alert(secondHighest(arr));
-		}
-		Main();
-	</script>
+if(arr[0]===arr[arr.length-1]){
+return Infinity;
+}
+return arr[arr.length-2];
 
-    <script type="text/javascript" src="./script.js">
+}
+
+function Main() {
+var n = prompt("Enter the number of elements");
+var arr = [];
+for (var i = 0; i < n; i++) {
+arr[i] = Number(prompt("Enter element " + (i+1)));
+}
+alert(secondHighest(arr));
+}
+Main();
+</script>
+
+<script type="text/javascript" src="./script.js">
 </script>
 
 </body>
